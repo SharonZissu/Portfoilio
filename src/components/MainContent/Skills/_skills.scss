@@ -12,7 +12,7 @@
     position: relative;
 
     height: 35rem;
-    width: 70%;
+    width: 50%;
     transform: translateY(5rem);
     // background-color: white;
     // box-shadow: 0 1rem 2rem rgba(black, 0.2);
@@ -44,7 +44,10 @@
       // box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       // background-color: var(--color-grey-light-1);
       @media only screen and (max-width: $bp-small-b) {
-        height: 40rem;
+        height: 35rem;
+      }
+      @media only screen and (max-width: $bp-small-b) {
+        height: 33rem;
       }
       @media only screen and (max-width: $bp-small-d) {
         height: 30rem;
@@ -91,17 +94,23 @@
       @media only screen and (max-width: $bp-small-b) {
         font-size: 4rem;
       }
+      @media only screen and (max-width: $bp-small-c) {
+        font-size: 3.5rem;
+      }
       @media only screen and (max-width: $bp-small-d) {
         font-size: 3rem;
       }
     }
 
     &--img {
-      width: 40%;
+      width: 70%;
       // height: 20rem;
       // height: 80%;
       @media only screen and (max-width: $bp-small-b) {
         width: 60%;
+      }
+      @media only screen and (max-width: $bp-small-b) {
+        width: 90%;
       }
       @media only screen and (max-width: $bp-small-d) {
         width: 100%;
