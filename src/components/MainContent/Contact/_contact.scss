@@ -1,0 +1,129 @@
+.contact {
+  position: relative;
+  //   padding: 2rem 2rem 0 2rem;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  @media only screen and (max-width: $bp-large) {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  &__img {
+    // height: 45rem;
+    // width: 54rem;
+    height: 40rem;
+    width: 50rem;
+    @media only screen and (max-width: $bp-small-c) {
+      height: 35rem;
+      width: 45rem;
+    }
+    @media only screen and (max-width: $bp-small-d) {
+      height: 28rem;
+      width: 35rem;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-self: center;
+    @media only screen and (max-width: $bp-large) {
+      padding-left: 5rem;
+      align-self: flex-start;
+    }
+    @media only screen and (max-width: $bp-small-d) {
+      padding-top: 7rem;
+    }
+  }
+  &__row {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    // border: 1px dashed black;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+  &__icon {
+    font-size: 3rem;
+    margin-right: 2rem;
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 3.2rem;
+    }
+    &--linkdin {
+      color: rgb(20, 88, 197);
+    }
+    &--facebook {
+      color: rgb(16, 28, 133);
+    }
+    &--github {
+      color: rgb(2, 2, 2);
+    }
+    &--gmail {
+      color: rgb(199, 19, 19);
+    }
+    &--phone {
+      color: rgb(228, 228, 12);
+    }
+  }
+  &__text {
+    font-size: 2rem;
+    z-index: 15;
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 2.2rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.9rem;
+    }
+    @media only screen and (max-width: $bp-small-b) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.photo-up-right {
+  position: absolute;
+  top: 1rem;
+  // right: 0;
+  height: 19rem;
+  width: 19rem;
+  transition: all 0.8s;
+  @media only screen and (max-width: $bp-largest) {
+    height: 25rem;
+    width: 25rem;
+  }
+  @media only screen and (max-width: $bp-small-b) {
+    height: 20rem;
+    width: 20rem;
+    top: 20rem;
+  }
+  @media only screen and (max-width: $bp-small-d) {
+    display: none;
+  }
+}
+
+.photo-down {
+  position: absolute;
+  bottom: 0rem;
+  right: 0;
+  height: 13rem;
+  width: 15rem;
+  @media only screen and (max-width: $bp-largest) {
+    height: 20rem;
+    width: 22rem;
+  }
+  @media only screen and (max-width: $bp-small-b) {
+    display: none;
+  }
+}

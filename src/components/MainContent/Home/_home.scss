@@ -1,0 +1,89 @@
+.home {
+  padding: 3rem;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  position: relative;
+  @media only screen and (max-width: $bp-largest) {
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    flex: 1;
+  }
+  &__photo {
+    width: 25rem;
+    height: 100%;
+    flex: 0 0 38%;
+    // height: 35rem;
+    border-radius: 3px;
+    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+    @media only screen and (max-width: $bp-largest) {
+      position: absolute;
+      bottom: 1rem;
+      right: 2rem;
+      height: 55%;
+      width: 30rem;
+      border-radius: 0;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 60%;
+    }
+    @media only screen and (max-width: $bp-small-c) {
+      height: 50%;
+      width: auto;
+      // right: 8rem;
+    }
+  }
+  &__content {
+    font-size: 2rem;
+    padding: 2rem;
+    flex: 0 0 50%;
+    margin-right: 3rem;
+    background-image: linear-gradient(rgba(white, 0.88), rgba(white, 0.88)),
+      url("../../../images/sharon-back.jpg");
+    background-size: cover;
+    background-position: center;
+    @media only screen and (max-width: $bp-largest) {
+      margin: 0;
+      flex: 0 0 100%;
+      // position: relative;
+      text-align: center;
+      font-size: 2.3rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left;
+
+      // margin: auto;
+    }
+    @media only screen and (max-width: $bp-large) {
+      font-size: 2.1rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      background-size: auto;
+      background-position: right 25%;
+      font-size: 1.8rem;
+    }
+    @media only screen and (max-width: $bp-small-b) {
+      font-size: 1.7rem;
+      background-position: center top 25%;
+    }
+    @media only screen and (max-width: $bp-small-c) {
+      font-size: 1.6rem;
+      line-height: 1.8;
+      height: 85vh;
+      text-align: start;
+    }
+    @media only screen and (max-width: $bp-small-d) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 1.4rem;
+    }
+
+    // box-shadow: 0 1rem 1.5rem rgba(#000, 0.2);
+  }
+}

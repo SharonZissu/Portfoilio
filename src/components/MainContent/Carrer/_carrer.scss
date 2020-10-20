@@ -1,0 +1,247 @@
+.carrer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  // justify-content: space-between;
+  // align-items: flex-end;
+  flex: 1;
+
+  &__text {
+    font-size: 1.6rem;
+    width: 95%;
+    align-self: center;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 0.6rem 2rem rgba(black, 0.1);
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 2rem;
+      margin-bottom: 0;
+      padding: 2rem 1rem;
+      margin-bottom: 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (max-width: $bp-small-d) {
+      margin: 4rem 2rem;
+    }
+  }
+
+  &__container-photos {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    @media only screen and (max-width: $bp-small) {
+      flex: 0;
+    }
+    // @media only screen and (max-width: $bp-smallest) {
+    //   flex: 1;
+    // }
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: column;
+    }
+  }
+  &__special-photo {
+    // margin-bottom: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(
+        110deg,
+        transparent 52%,
+        rgba(white, 0.6) 52%,
+        rgba(white, 0.6) 100%
+      ),
+      url("../../../images/football-pic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(black, 0.2);
+    @media only screen and (max-width: $bp-largest) {
+      width: 100%;
+      // height: 100%;
+      border-radius: 0px;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      height: 43rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      height: 45.2rem;
+    }
+    @media only screen and (max-width: $bp-small-b) {
+      height: 35rem;
+    }
+    @media only screen and (max-width: $bp-small-c) {
+      height: 32rem;
+    }
+    @media only screen and (max-width: $bp-small-d) {
+      height: 25rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      height: 20rem;
+      margin-bottom: 1rem;
+      box-shadow: none;
+      border: 1px solid black;
+    }
+  }
+
+  &__photos {
+    display: flex;
+    flex-direction: column;
+    height: 35rem;
+    flex: 1;
+    // justify-content: space-between;
+    align-items: center;
+    :nth-child(1) {
+      margin-bottom: 1rem;
+    }
+    @media only screen and (max-width: $bp-largest) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: 2rem;
+      width: auto;
+      height: auto;
+      width: 100%;
+      :nth-child(1) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media only screen and (max-width: $bp-small-d) {
+      transform: translateY(-3rem);
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: column;
+      transform: translateY(0);
+      position: relative;
+    }
+    &-photo {
+      outline-offset: 1rem;
+      transition: all 0.2s;
+      z-index: 10;
+      box-shadow: 0 1rem 2rem rgba(black, 0.2);
+      @media only screen and (max-width: $bp-largest) {
+        // transform: scale(0.9);
+        border: 1px solid black;
+        // border-radius: 3px;
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+        opacity: 0.8;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        // border: none;
+
+        &:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 2rem;
+        }
+      }
+
+      &--1 {
+        width: 60%;
+        height: 45%;
+        box-shadow: 0 1.5rem 4rem rgba(black, 0.2);
+        @media only screen and (max-width: $bp-largest) {
+          width: 15rem;
+          height: 14rem;
+        }
+        @media only screen and (max-width: $bp-medium) {
+          width: 12rem;
+          height: 11rem;
+        }
+        @media only screen and (max-width: $bp-small-c) {
+          width: 11rem;
+          height: 10rem;
+        }
+        @media only screen and (max-width: $bp-small-d) {
+          width: 9rem;
+          height: 8rem;
+        }
+        @media only screen and (max-width: $bp-smallest) {
+          width: 100%;
+          height: 50%;
+        }
+      }
+
+      &--2 {
+        position: absolute;
+        width: 20rem;
+        height: 15rem;
+        left: 65%;
+        top: 50%;
+        @media only screen and (max-width: $bp-largest) {
+          position: static;
+          width: 20rem;
+          height: 14rem;
+        }
+        @media only screen and (max-width: $bp-medium) {
+          width: 16rem;
+          height: 11rem;
+        }
+        @media only screen and (max-width: $bp-small-c) {
+          width: 14rem;
+          height: 10rem;
+        }
+        @media only screen and (max-width: $bp-small-d) {
+          width: 12rem;
+          height: 8rem;
+        }
+        @media only screen and (max-width: $bp-smallest) {
+          width: 100%;
+          height: 50%;
+        }
+      }
+
+      &--3 {
+        width: 75%;
+        height: 45%;
+        box-shadow: 0 1.5rem 4rem rgba(black, 0.2);
+        @media only screen and (max-width: $bp-largest) {
+          width: 22rem;
+          height: 14rem;
+          display: inline-block;
+        }
+        @media only screen and (max-width: $bp-medium) {
+          width: 17rem;
+          height: 11rem;
+        }
+        @media only screen and (max-width: $bp-small-c) {
+          width: 15rem;
+          height: 10rem;
+        }
+        @media only screen and (max-width: $bp-small-d) {
+          width: 13rem;
+          height: 8rem;
+        }
+        @media only screen and (max-width: $bp-smallest) {
+          width: 100%;
+          height: 50%;
+        }
+      }
+
+      &:hover {
+        outline: 1rem solid var(--color-primary);
+        transform: scale(1.05) translateY(-0.5rem);
+        box-shadow: 0 2.5rem 4rem rgba(black, 0.5);
+        z-index: 20;
+        @media only screen and (max-width: $bp-largest) {
+          outline: 0.7rem solid var(--color-primary);
+          opacity: 1;
+        }
+      }
+    }
+    &:hover &-photo:not(:hover) {
+      transform: scale(0.9);
+    }
+  }
+}
