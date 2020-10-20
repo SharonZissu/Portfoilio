@@ -39,6 +39,7 @@ $bp-smallest: 23.625em; //378px
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px
+  min-height: 100vh;
 }
 
 body {
