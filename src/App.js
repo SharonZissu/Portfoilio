@@ -20,6 +20,7 @@ import "./styles/sass/main.scss";
 const App = () => {
   return (
     <div className="middle-container">
+      <h1>Hello</h1>
       <OuterImage />
       <Header />
       <div className="content">
