@@ -1,7 +1,5 @@
 .projects {
   display: flex;
-  //   align-items: center;
-  //   padding: 2rem;
   flex: 1;
   @media only screen and (max-width: $bp-small) {
     display: block;
@@ -10,10 +8,6 @@
 
 .project {
   flex: 0 0 100%;
-  // @media only screen and (max-width: $bp-large) {
-  //   display: flex;
-  //   // height: 80%;
-  // }
   @media only screen and (max-width: $bp-medium) {
     display: flex;
     flex-direction: column-reverse;
@@ -22,7 +16,6 @@
   &__images {
     display: flex;
     justify-content: center;
-    // margin-bottom: 2rem;
     border-bottom: var(--line);
     height: 60%;
     @media only screen and (max-width: $bp-largest) {
@@ -40,24 +33,15 @@
     @media only screen and (max-width: $bp-small) {
       flex-direction: column;
       align-items: center;
-
-      // height: 20%;
     }
   }
 
   &__main-img {
-    // flex: 0 0 50%;
     height: 100%;
     width: 60%;
-    // @media only screen and (max-width: $bp-large) {
-    //   flex-direction: column;
-    //   width: 100%;
-    //   height: 40rem;
-    // }
+
     @media only screen and (max-width: $bp-large) {
       width: 73%;
-
-      // flex: 0 0 100%;
     }
 
     @media only screen and (max-width: $bp-small) {
@@ -71,13 +55,11 @@
     @media only screen and (max-width: $bp-small-d) {
       height: 20rem;
     }
-    // box-shadow: 0 1rem 2rem rgba(black, 0.3);
   }
   &__images-right {
     width: 40%;
     @media only screen and (max-width: $bp-small) {
       display: flex;
-      // width: 30rem;
       justify-content: center;
       width: 50%;
     }
@@ -90,14 +72,11 @@
     }
   }
   &__sub-img {
-    // flex: 0 0 20%;
     height: 100%;
 
     padding-left: 1rem;
     width: 50%;
-    // box-shadow: 0 1rem 2rem rgba(black, 0.3);
-    // @media only screen and (max-width: $bp-largest) {
-    //   flex: 0 0 18%;
+
     @media only screen and (max-width: $bp-large) {
       width: 100%;
     }
@@ -118,7 +97,6 @@
       width: 100%;
     }
 
-    // }
     &--2 {
       @media only screen and (max-width: $bp-large) {
         display: none;
@@ -127,8 +105,6 @@
         display: inline-block;
         padding-right: 0;
         padding-left: 1rem;
-
-        // height: 20rem;
       }
       @media only screen and (max-width: $bp-small-c) {
         width: 40rem;
@@ -170,8 +146,6 @@
     @media only screen and (max-width: $bp-small-d) {
       width: 90%;
       padding: 2rem 1rem;
-
-      // padding-right: 0.4rem;
     }
   }
   &__heading {
@@ -203,16 +177,12 @@
     @media only screen and (max-width: $bp-smallest) {
       font-size: 1.2rem;
     }
-    // @media only screen and (max-width: $bp-large) {
-    //   width: 78%;
-    // }
   }
   &__btn {
     display: inline-block;
     font-size: 2rem;
     border: none;
     background-color: var(--color-grey-dark-1);
-    // margin-right: 2rem;
     cursor: pointer;
     box-shadow: 0 1rem 2rem rgba(black, 0.2);
     text-decoration: none;
@@ -231,7 +201,6 @@
     }
 
     @media only screen and (max-width: $bp-largest) {
-      // padding: 0.4rem 6rem;
       flex: 0 0 10%;
     }
     @media only screen and (max-width: $bp-large) {

@@ -1,7 +1,6 @@
 .home {
   padding: 3rem;
   display: flex;
-  // align-items: center;
   justify-content: center;
   position: relative;
   @media only screen and (max-width: $bp-largest) {
@@ -16,7 +15,6 @@
     width: 25rem;
     height: 100%;
     flex: 0 0 38%;
-    // height: 35rem;
     border-radius: 3px;
     box-shadow: 0 1rem 2rem rgba(#000, 0.2);
     @media only screen and (max-width: $bp-largest) {
@@ -34,7 +32,6 @@
     @media only screen and (max-width: $bp-small-c) {
       height: 50%;
       width: auto;
-      // right: 8rem;
     }
   }
   &__content {
@@ -49,14 +46,11 @@
     @media only screen and (max-width: $bp-largest) {
       margin: 0;
       flex: 0 0 100%;
-      // position: relative;
       text-align: center;
       font-size: 2.3rem;
       background-size: contain;
       background-repeat: no-repeat;
       background-position: left;
-
-      // margin: auto;
     }
     @media only screen and (max-width: $bp-large) {
       font-size: 2.1rem;
@@ -83,7 +77,5 @@
     @media only screen and (max-width: $bp-smallest) {
       font-size: 1.4rem;
     }
-
-    // box-shadow: 0 1rem 1.5rem rgba(#000, 0.2);
   }
 }

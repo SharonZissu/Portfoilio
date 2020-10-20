@@ -7,32 +7,21 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  // opacity: 0;
   @media only screen and (max-width: $bp-largest) {
     margin: 0;
     max-width: 100%;
     width: 100%;
     min-height: 100vh;
   }
-  // @media only screen and (max-width: $bp-small) {
-  //   height: 100rem;
-  // }
 }
 
 .header {
   font-size: 1.4rem;
-  // height: 7rem;
   background-color: #fff;
   border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  // @media only screen and (max-width: $bp-smallest) {
-  //     flex-wrap: wrap;
-  //     align-content: space-around;
-  //     height: 11rem;
-  // }
 }
 
 .content {
@@ -47,9 +36,6 @@
   @media only screen and (max-width: $bp-small) {
     height: 100%;
   }
-  // @media only screen and (max-width: $bp-medium) {
-  //     flex-direction: column;
-  // }
 }
 
 .sidebar {
@@ -63,8 +49,6 @@
   @media only screen and (max-width: $bp-medium) {
     flex: 0;
   }
-
-  // height: 50rem;
 }
 
 .hotel-view {
@@ -77,9 +61,6 @@
   width: 15rem;
   position: absolute;
   left: 50%;
-  // top: 0;
   z-index: -15;
-  // opacity: 0;
   transition: all 0.8s;
-  // display: none;
 }

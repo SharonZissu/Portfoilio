@@ -6,17 +6,12 @@
 
 .portfolio-text {
   height: 5rem;
-  // width: 45rem;
 }
 
 .user-nav {
   display: flex;
-  // margin-right: 1rem;
   font-size: 4rem;
   &__link {
-    // &:not(:last-child) {
-    //   margin-right: 4rem;
-    // }
     padding: 0 1.4rem;
     &:hover,
     &:focus {
@@ -26,7 +21,6 @@
   }
   &__icon {
     cursor: pointer;
-
     &--linkdin {
       color: rgb(20, 88, 197);
     }

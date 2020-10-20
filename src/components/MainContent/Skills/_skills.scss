@@ -8,14 +8,12 @@
   &__skill {
     perspective: 150rem;
     -moz-perspective: 150rem;
-    /* height: 15rem; */
     position: relative;
 
     height: 35rem;
     width: 50%;
     transform: translateY(5rem);
-    // background-color: white;
-    // box-shadow: 0 1rem 2rem rgba(black, 0.2);
+
     margin: auto auto;
     @media only screen and (max-width: $bp-small-b) {
       height: 30rem;
@@ -36,13 +34,11 @@
       left: 0;
       width: 100%;
       backface-visibility: hidden;
-      // border-radius: 3px;
       overflow: hidden;
       border: 1.2rem solid black;
       outline-offset: 1rem;
       outline: 1.2rem solid var(--color-primary);
-      // box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-      // background-color: var(--color-grey-light-1);
+
       @media only screen and (max-width: $bp-small-b) {
         height: 35rem;
       }
@@ -55,17 +51,11 @@
 
       &--front {
         display: flex;
-        // flex-direction: column;
         align-items: center;
-        // justify-content: space-between;
-        // background-image: radial-gradient(
-        //   (var(--color-primary-light), var(--color-primary))
-        // );
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
-        // border: 1px solid black;
       }
 
       &--back {
@@ -104,8 +94,6 @@
 
     &--img {
       width: 70%;
-      // height: 20rem;
-      // height: 80%;
       @media only screen and (max-width: $bp-small-b) {
         width: 60%;
       }
@@ -121,7 +109,6 @@
     font-size: 5rem;
     color: var(--color-primary);
     cursor: pointer;
-    // transform: translateX(0);
 
     transition: all 0.2s;
     &--right {
@@ -181,20 +168,10 @@
   color: green;
 }
 
-// .item-ca {
-//   background-color: red;
-//   display: flex;
-// }
-// .carousel .carousel-inner {
-//   overflow: visible;
-// }
 .carousel {
   width: 100%;
   display: flex;
   justify-content: center;
-
-  // display: flex;
-  // align-items: center;
 }
 .carousel .carousel-inner {
   height: 47rem;
@@ -203,9 +180,6 @@
   display: none;
 }
 .carousel-control-prev .carousel-control-prev-icon {
-  // background-color: #000;
-  // margin-right: 4rem;
-
   background-image: url("../../../images/arrow-prev.png");
   height: 3rem;
   width: 3rem;
@@ -216,10 +190,8 @@
   }
 }
 .carousel-control-next .carousel-control-next-icon {
-  // background-color: #000;
   height: 3rem;
   width: 3rem;
-  // margin-left: 4rem;
   background-image: url("../../../images/arrow-next.png");
   position: absolute;
   right: 0;
