@@ -1,214 +1,65 @@
 .projects {
-  display: flex;
   flex: 1;
-  @media only screen and (max-width: $bp-small) {
-    display: block;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 3rem;
+  @media (max-width: $bp-largest) {
+    align-items: center;
+  }
+  @media (max-width: $bp-small-b) {
+    flex-direction: column;
+  }
+  &__link {
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:not(:last-child) {
+      margin-right: 10rem;
+      @media (max-width: $bp-small-b) {
+        margin-right: 0;
+        margin-bottom: 10rem;
+      }
+    }
   }
 }
 
 .project {
-  flex: 0 0 100%;
-  @media only screen and (max-width: $bp-medium) {
-    display: flex;
-    flex-direction: column-reverse;
+  width: 23rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  border: 1rem solid black;
+  outline-offset: 1rem;
+  outline: 1rem solid var(--color-primary);
+
+  @media (max-width: $bp-largest) {
+    width: 30rem;
+    height: 53rem;
   }
 
-  &__images {
-    display: flex;
-    justify-content: center;
-    border-bottom: var(--line);
-    height: 60%;
-    @media only screen and (max-width: $bp-largest) {
-      height: 46%;
-    }
-    @media only screen and (max-width: $bp-large) {
-      width: 100%;
-      height: 50%;
-      justify-content: space-between;
-    }
-    @media only screen and (max-width: $bp-medium) {
-      margin-bottom: 0rem;
-      height: 60%;
-    }
-    @media only screen and (max-width: $bp-small) {
-      flex-direction: column;
-      align-items: center;
-    }
+  @media (max-width: $bp-smallest) {
+    width: 30rem;
+    height: 53rem;
+    outline-offset: 0.2rem;
   }
 
-  &__main-img {
-    height: 100%;
-    width: 60%;
-
-    @media only screen and (max-width: $bp-large) {
-      width: 73%;
-    }
-
-    @media only screen and (max-width: $bp-small) {
-      width: 100%;
-      height: 40rem;
-      margin-bottom: 2rem;
-    }
-    @media only screen and (max-width: $bp-small-c) {
-      height: 30rem;
-    }
-    @media only screen and (max-width: $bp-small-d) {
-      height: 20rem;
-    }
+  &__img {
+    width: 100%;
+    height: 90%;
   }
-  &__images-right {
-    width: 40%;
-    @media only screen and (max-width: $bp-small) {
-      display: flex;
-      justify-content: center;
-      width: 50%;
-    }
 
-    @media only screen and (max-width: $bp-small-c) {
-      flex-direction: column;
-
-      width: 100%;
-      align-items: center;
-    }
-  }
-  &__sub-img {
-    height: 100%;
-
-    padding-left: 1rem;
-    width: 50%;
-
-    @media only screen and (max-width: $bp-large) {
-      width: 100%;
-    }
-    @media only screen and (max-width: $bp-medium) {
-      width: 100%;
-    }
-    @media only screen and (max-width: $bp-small) {
-      height: 60rem;
-      padding-right: 1rem;
-      padding-left: 0;
-    }
-    @media only screen and (max-width: $bp-small-c) {
-      width: 40rem;
-      padding: 0;
-      margin-bottom: 2rem;
-    }
-    @media only screen and (max-width: $bp-small-d) {
-      width: 100%;
-    }
-
-    &--2 {
-      @media only screen and (max-width: $bp-large) {
-        display: none;
-      }
-      @media only screen and (max-width: $bp-small) {
-        display: inline-block;
-        padding-right: 0;
-        padding-left: 1rem;
-      }
-      @media only screen and (max-width: $bp-small-c) {
-        width: 40rem;
-        padding: 0;
-      }
-      @media only screen and (max-width: $bp-small-d) {
-        width: 100%;
-      }
-    }
-  }
-  &__content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    flex: 0 0 100%;
-    &__info {
-      display: flex;
-      flex-direction: column;
-    }
-    @media only screen and (max-width: $bp-largest) {
-      padding: 7rem 2rem;
-    }
-    @media only screen and (max-width: $bp-large) {
-      padding: 2rem 4rem;
-      flex: 0 0 35%;
-    }
-    @media only screen and (max-width: $bp-small) {
-      padding: 5rem 4rem;
-      flex: 0 0 15%;
-    }
-    @media only screen and (max-width: $bp-small-b) {
-      flex-direction: column;
-      width: 90%;
-    }
-    @media only screen and (max-width: $bp-small-c) {
-      padding: 5rem 3rem;
-    }
-    @media only screen and (max-width: $bp-small-d) {
-      width: 90%;
-      padding: 2rem 1rem;
-    }
-  }
-  &__heading {
-    font-size: 2.4rem;
-    @media only screen and (max-width: $bp-largest) {
-      font-size: 2.8rem;
-    }
-    @media only screen and (max-width: $bp-small-c) {
-      font-size: 2.5rem;
-    }
-    @media only screen and (max-width: $bp-smallest) {
-      font-size: 2.2rem;
-    }
-  }
-  &__overview {
-    font-size: 1.6rem;
-    width: 110%;
-    @media only screen and (max-width: $bp-largest) {
-      font-size: 1.8rem;
-      line-height: 2.2;
-    }
-    @media only screen and (max-width: $bp-medium) {
-      font-size: 1.6rem;
-      line-height: 2;
-    }
-    @media only screen and (max-width: $bp-small-c) {
-      font-size: 1.4rem;
-    }
-    @media only screen and (max-width: $bp-smallest) {
-      font-size: 1.2rem;
-    }
-  }
-  &__btn {
-    display: inline-block;
+  &__name {
     font-size: 2rem;
-    border: none;
-    background-color: var(--color-grey-dark-1);
+    margin-top: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 1rem 2rem rgba(black, 0.2);
-    text-decoration: none;
-    color: white;
-    padding: 0.4rem 1rem;
-    transition: all 0.2s;
-    text-align: center;
-
     &:hover {
-      transform: translateY(-0.5rem);
-      box-shadow: 0 2rem 3rem rgba(black, 0.2);
-    }
-    &:active {
-      transform: translateY(0);
-      box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
-    }
-
-    @media only screen and (max-width: $bp-largest) {
-      flex: 0 0 10%;
-    }
-    @media only screen and (max-width: $bp-large) {
-      flex: 0 0 13%;
-    }
-    @media only screen and (max-width: $bp-small-b) {
-      flex: 0 0 18%;
-      margin-top: 3rem;
+      border: none;
     }
   }
 }

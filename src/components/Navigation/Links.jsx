@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { LinksContext } from '../../state/links-contex';
 import MenuToPhones from "./MenuToPhones";
-const links = ['home', 'education', 'skills', 'projects', 'carrer', 'contact'];
+const links = ['home', 'education', 'skills', 'projects', 'career', 'contact'];
 
 const Links = () => {
   const { toggleMenuIsClicked, menuIsClicked } = useContext(LinksContext);

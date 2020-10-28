@@ -14,7 +14,7 @@ const Home = () => {
         Highly motivated to succeed and wishing to enter the Hi-Tech industry.
         <br />
         With a Bachelor's degree in compuer science. <br />
-        Intuitive, deductive and self-tahght with attention to details and
+        Intuitive, deductive and self-taught with attention to details and
         accuracy. Excellent communication skills and interpersonal relations.
       </p>
       <img

@@ -10,12 +10,14 @@ import Links from "./components/Navigation/Links.jsx";
 import Home from "./components/MainContent/Home/Home.jsx";
 import Education from "./components/MainContent/Education/Education.jsx";
 import Skills from "./components/MainContent/Skills/Skills.jsx";
-import Projects from "./components/MainContent/Projects/Projects.jsx";
+import Projects from "./components/MainContent/Projects/Projects";
+import OnlineStore from "./components/MainContent/Projects/OnlineStore";
 import Carrer from "./components/MainContent/Carrer/Carrer.jsx";
 import Contact from "./components/MainContent/Contact/Contact.jsx";
 import OuterImage from "./components/OuterImage.jsx";
 
 import "./styles/sass/main.scss";
+import HowFastAreYou from "./components/MainContent/Projects/HowFastAreYou.jsx";
 
 const App = () => {
   return (
@@ -30,7 +32,9 @@ const App = () => {
           <Route path="/home" component={Home} />
           <Route path="/education" component={Education} />
           <Route path="/skills" component={Skills} />
-          <Route path="/projects" component={Projects} />
+          <Route exact path="/projects" component={Projects} />
+          <Route path="/projects/online-store" component={OnlineStore} />
+          <Route path="/projects/how-fast-are-you" component={HowFastAreYou} />
           <Route path="/carrer" component={Carrer} />
           <Route path="/contact" component={Contact} />
           <Redirect to="/home" />

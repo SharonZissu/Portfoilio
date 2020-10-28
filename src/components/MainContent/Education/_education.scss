@@ -37,6 +37,9 @@
         margin-bottom: 7rem;
       }
     }
+    @media only screen and (max-width: $bp-small-c) {
+     border: 1px dashed black;
+    }
 
     &:not(:last-child) {
       margin-bottom: 1.7rem;
@@ -115,6 +118,15 @@
     @media only screen and (max-width: $bp-small-b) {
       align-self: stretch;
     }
+    @media only screen and (max-width: $bp-small-c) {
+     background-image: none;
+    //  border: .5px dashed black;
+    //  background-image: radial-gradient(
+    //   (white,rgba(black, .3))
+    // );
+    //  background-color: rgba(grey, .3);
+    }
+    
   }
 }
 

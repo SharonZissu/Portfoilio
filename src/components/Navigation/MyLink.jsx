@@ -29,7 +29,7 @@ const MyLink = ({ id }) => {
         case 'projects':
             linkIcon = faTasks;
             break;
-        case 'carrer':
+        case 'career':
             linkIcon = faFutbol;
             break;
         case 'contact':
